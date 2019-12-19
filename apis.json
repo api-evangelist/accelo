@@ -1,0 +1,78 @@
+{
+    "name": "Accelo",
+    "description": "The #1 Service Operations Automation (ServOps) featuring sales, project management, email integration, retainer management, sales tracking, and support.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/320-accelo.jpg",
+    "tags": [
+        "api provider",
+        "crm",
+        "customers",
+        "have api",
+        "invoices",
+        "no api definition",
+        "politics",
+        "projects"
+    ],
+    "created": "2019-12-18",
+    "modified": "2019-12-18",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/accelo\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Accelo",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/320-accelo.jpg",
+            "humanURL": "https:\/\/www.accelo.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/accelo-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/accelo-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "https:\/\/www.accelo.com\/resources\/blog\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/affinitylive"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/api.accelo.com\/docs\/?_ga=2.33722019.342188080.1527277082-882498665.1527277082"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/www.accelo.com\/resources\/apis\/"
+        },
+        {
+            "type": "Email",
+            "url": "support@accelo.com"
+        },
+        {
+            "type": "Email",
+            "url": "sales@accelo.com"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/accelo"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/accelo"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.accelo.com\/"
+        }
+    ]
+}
