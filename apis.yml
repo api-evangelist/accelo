@@ -1,0 +1,63 @@
+aid: accelo
+name: Accelo
+description: >-
+  Accelo is a cloud-based service operations automation (ServOps) platform that
+  unifies project management, client relationship management (CRM), time
+  tracking, retainers, quotes, billing, and invoicing for professional services
+  businesses. The Accelo REST API exposes resources such as companies, contacts,
+  activities, tasks, jobs (projects), milestones, invoices, contracts, and
+  webhooks using OAuth 2.0 authentication scoped to a deployment subdomain.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Professional Services Automation
+  - Project Management
+  - CRM
+  - Time Tracking
+  - Invoicing
+  - Service Operations
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/accelo/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: accelo:accelo-api
+    name: Accelo REST API
+    description: >-
+      REST API for Accelo with CRUD access to companies, contacts, activities,
+      tasks, projects (jobs), milestones, invoices, contracts, quotes,
+      prospects, time entries, staff, and webhooks. Uses OAuth 2.0 (service,
+      web, and installed application grants) with a Bearer access token and
+      deployment-scoped subdomain.
+    humanURL: https://api.accelo.com/docs/
+    baseURL: https://{deployment}.api.accelo.com/api/v0
+    tags:
+      - Professional Services Automation
+      - Project Management
+      - CRM
+      - Time Tracking
+      - Invoicing
+    properties:
+      - type: Documentation
+        url: https://api.accelo.com/docs/
+      - type: Authentication
+        url: https://api.accelo.com/docs/#authentication
+common:
+  - type: Website
+    url: https://www.accelo.com
+  - type: Documentation
+    url: https://api.accelo.com/docs/
+  - type: Sign Up
+    url: https://www.accelo.com/signup/
+  - type: Pricing
+    url: https://www.accelo.com/pricing/
+  - type: Login
+    url: https://app.accelo.com/login/
+  - type: Support
+    url: https://help.accelo.com/
+  - type: Blog
+    url: https://www.accelo.com/resources/blog/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
