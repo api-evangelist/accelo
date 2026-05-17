@@ -48,7 +48,7 @@ common:
     url: https://www.accelo.com
   - type: Documentation
     url: https://api.accelo.com/docs/
-  - type: Sign Up
+  - type: SignUp
     url: https://www.accelo.com/signup/
   - type: Pricing
     url: https://www.accelo.com/pricing/
