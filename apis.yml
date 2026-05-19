@@ -44,6 +44,10 @@ apis:
       - type: Authentication
         url: https://api.accelo.com/docs/#authentication
 common:
+  - type: GitHubOrganization
+    url: https://github.com/Accelo
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/accelo
   - type: Website
     url: https://www.accelo.com
   - type: Documentation
