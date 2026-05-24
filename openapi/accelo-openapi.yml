@@ -1,0 +1,144 @@
+openapi: 3.1.0
+info:
+  title: Accelo REST API
+  version: v0
+  description: >-
+    REST API for Accelo's service operations (ServOps) platform. Provides access
+    to companies, contacts, activities, tasks, jobs (projects), issues,
+    invoices, contracts, quotes, prospects, staff, timers, and webhooks. Uses
+    OAuth 2.0 with bearer access tokens, scoped to a deployment subdomain.
+  contact:
+    name: Accelo
+    url: https://www.accelo.com
+servers:
+  - url: https://{deployment}.api.accelo.com/api/v0
+    description: Deployment-scoped Accelo API server
+    variables:
+      deployment:
+        default: example
+        description: Your Accelo deployment subdomain
+tags:
+  - name: Activities
+  - name: Companies
+  - name: Contacts
+  - name: Jobs
+  - name: Issues
+  - name: Tasks
+  - name: OAuth
+paths:
+  /activities:
+    get:
+      summary: List activities
+      tags: [Activities]
+    post:
+      summary: Create an activity
+      tags: [Activities]
+  /activities/{activity_id}:
+    get:
+      summary: Retrieve a specific activity
+      tags: [Activities]
+    put:
+      summary: Update an activity
+      tags: [Activities]
+    delete:
+      summary: Delete an activity
+      tags: [Activities]
+  /activities/{activity_id}/interactions:
+    get:
+      summary: List interactions for an activity
+      tags: [Activities]
+  /activities/{activity_id}/threads:
+    get:
+      summary: List threads for an activity
+      tags: [Activities]
+  /companies:
+    get:
+      summary: List companies
+      tags: [Companies]
+    post:
+      summary: Create a company
+      tags: [Companies]
+  /companies/{company_id}:
+    get:
+      summary: Get a company
+      tags: [Companies]
+    put:
+      summary: Update a company
+      tags: [Companies]
+    delete:
+      summary: Delete a company
+      tags: [Companies]
+  /contacts:
+    get:
+      summary: List contacts
+      tags: [Contacts]
+    post:
+      summary: Create a contact
+      tags: [Contacts]
+  /contacts/{contact_id}:
+    get:
+      summary: Get a contact
+      tags: [Contacts]
+    put:
+      summary: Update a contact
+      tags: [Contacts]
+  /jobs:
+    get:
+      summary: List jobs (projects)
+      tags: [Jobs]
+    post:
+      summary: Create a job
+      tags: [Jobs]
+  /jobs/{job_id}:
+    get:
+      summary: Get a job
+      tags: [Jobs]
+    put:
+      summary: Update a job
+      tags: [Jobs]
+  /issues:
+    get:
+      summary: List issues (tickets)
+      tags: [Issues]
+    post:
+      summary: Create an issue
+      tags: [Issues]
+  /issues/{issue_id}:
+    get:
+      summary: Get an issue
+      tags: [Issues]
+    put:
+      summary: Update an issue
+      tags: [Issues]
+  /tasks:
+    get:
+      summary: List tasks
+      tags: [Tasks]
+    post:
+      summary: Create a task
+      tags: [Tasks]
+  /tasks/{task_id}:
+    get:
+      summary: Get a task
+      tags: [Tasks]
+    put:
+      summary: Update a task
+      tags: [Tasks]
+  /tokeninfo:
+    get:
+      summary: Get information about the current access token
+      tags: [OAuth]
+components:
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://{deployment}.api.accelo.com/oauth2/v0/authorize
+          tokenUrl: https://{deployment}.api.accelo.com/oauth2/v0/token
+          scopes: {}
+        clientCredentials:
+          tokenUrl: https://{deployment}.api.accelo.com/oauth2/v0/token
+          scopes: {}
+security:
+  - OAuth2: []
