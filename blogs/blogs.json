@@ -3,12 +3,12 @@
   "feeds": [
     {
       "source": "https://www.accelo.com/resources/blog/",
-      "feed_url": "https://www.accelo.com/blog/",
-      "title": "Accelo Blog",
-      "saved": 1,
-      "method": "html-scrape"
+      "feed_url": "",
+      "saved": 0,
+      "method": "agent-scrape"
     }
   ],
-  "fetched": "2026-06-21T17:00:00Z",
-  "post_count": 1
+  "fetched": "2026-06-27T12:21:03Z",
+  "post_count": 1,
+  "agent_pulled": "2026-06-27"
 }
