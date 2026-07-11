@@ -1,0 +1,22 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/accelo-openapi.yml
+summary:
+  types:
+  - oauth2
+  oauth2_flows:
+  - authorizationCode
+  - clientCredentials
+schemes:
+- name: OAuth2
+  type: oauth2
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://{deployment}.api.accelo.com/oauth2/v0/authorize
+    tokenUrl: https://{deployment}.api.accelo.com/oauth2/v0/token
+    scopes: 0
+  - flow: clientCredentials
+    tokenUrl: https://{deployment}.api.accelo.com/oauth2/v0/token
+    scopes: 0
+  sources:
+  - openapi/accelo-openapi.yml
