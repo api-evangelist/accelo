@@ -44,6 +44,10 @@ apis:
       - type: Authentication
         url: https://api.accelo.com/docs/#authentication
 common:
+  - type: DomainSecurity
+    url: security/accelo-domain-security.yml
+  - type: Authentication
+    url: authentication/accelo-authentication.yml
   - type: OAuthScopes
     url: scopes/accelo-scopes.yml
   - type: GitHubOrganization
