@@ -1,0 +1,36 @@
+generated: '2026-07-11'
+method: searched
+source: openapi/accelo-openapi.yml
+docs: https://api.accelo.com/docs/#scope
+schemes:
+- name: OAuth2
+  source: openapi/accelo-openapi.yml
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://{deployment}.api.accelo.com/oauth2/v0/authorize
+    tokenUrl: https://{deployment}.api.accelo.com/oauth2/v0/token
+  - flow: clientCredentials
+    tokenUrl: https://{deployment}.api.accelo.com/oauth2/v0/token
+scopes:
+- scope: read(all)
+  description: Read only access to all data the user owns or has access to.
+  sources:
+  - https://api.accelo.com/docs/#scope
+- scope: write(all)
+  description: Read and write access to all data the user owns or has access to.
+  sources:
+  - https://api.accelo.com/docs/#scope
+- scope: read({resource})
+  description: Read only access to data related to the {resource} object, which
+    may be any resource. Multiple resources may be concatenated, e.g.
+    read(companies,contacts).
+  sources:
+  - https://api.accelo.com/docs/#scope
+- scope: write({resource})
+  description: Read and write access related to the resource specified. Multiple
+    resources may be concatenated, e.g. write(companies,contacts).
+  sources:
+  - https://api.accelo.com/docs/#scope
+note: Accelo documents a scope template rather than a fixed scope list — read()/write()
+  wrapping "all" or any API resource name (e.g. companies, contacts, staff); scope
+  is optional and defaults to read(all) (https://api.accelo.com/docs/#scope).

@@ -44,6 +44,8 @@ apis:
       - type: Authentication
         url: https://api.accelo.com/docs/#authentication
 common:
+  - type: OAuthScopes
+    url: scopes/accelo-scopes.yml
   - type: GitHubOrganization
     url: https://github.com/Accelo
   - type: LinkedIn
