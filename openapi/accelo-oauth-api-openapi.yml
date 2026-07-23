@@ -1,0 +1,37 @@
+openapi: 3.1.0
+info:
+  title: Accelo REST Activities OAuth API
+  version: v0
+  description: REST API for Accelo's service operations (ServOps) platform. Provides access to companies, contacts, activities, tasks, jobs (projects), issues, invoices, contracts, quotes, prospects, staff, timers, and webhooks. Uses OAuth 2.0 with bearer access tokens, scoped to a deployment subdomain.
+  contact:
+    name: Accelo
+    url: https://www.accelo.com
+servers:
+- url: https://{deployment}.api.accelo.com/api/v0
+  description: Deployment-scoped Accelo API server
+  variables:
+    deployment:
+      default: example
+      description: Your Accelo deployment subdomain
+security:
+- OAuth2: []
+tags:
+- name: OAuth
+paths:
+  /tokeninfo:
+    get:
+      summary: Get information about the current access token
+      tags:
+      - OAuth
+components:
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://{deployment}.api.accelo.com/oauth2/v0/authorize
+          tokenUrl: https://{deployment}.api.accelo.com/oauth2/v0/token
+          scopes: {}
+        clientCredentials:
+          tokenUrl: https://{deployment}.api.accelo.com/oauth2/v0/token
+          scopes: {}
