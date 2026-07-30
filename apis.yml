@@ -8,7 +8,19 @@ description: >-
   activities, tasks, jobs (projects), milestones, invoices, contracts, and
   webhooks using OAuth 2.0 authentication scoped to a deployment subdomain.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/accelo.png
 tags:
   - Professional Services Automation
   - Project Management
@@ -22,27 +34,95 @@ created: '2026-05-11'
 modified: '2026-05-11'
 specificationVersion: '0.19'
 apis:
-  - aid: accelo:accelo-api
-    name: Accelo REST API
-    description: >-
-      REST API for Accelo with CRUD access to companies, contacts, activities,
-      tasks, projects (jobs), milestones, invoices, contracts, quotes,
-      prospects, time entries, staff, and webhooks. Uses OAuth 2.0 (service,
-      web, and installed application grants) with a Bearer access token and
-      deployment-scoped subdomain.
-    humanURL: https://api.accelo.com/docs/
-    baseURL: https://{deployment}.api.accelo.com/api/v0
-    tags:
-      - Professional Services Automation
-      - Project Management
-      - CRM
-      - Time Tracking
-      - Invoicing
-    properties:
-      - type: Documentation
-        url: https://api.accelo.com/docs/
-      - type: Authentication
-        url: https://api.accelo.com/docs/#authentication
+- aid: accelo:accelo-api
+  name: Accelo REST API
+  description: >-
+    REST API for Accelo with CRUD access to companies, contacts, activities, tasks, projects (jobs), milestones,
+    invoices, contracts, quotes, prospects, time entries, staff, and webhooks. Uses OAuth 2.0 (service,
+    web, and installed application grants) with a Bearer access token and deployment-scoped subdomain.
+  humanURL: https://api.accelo.com/docs/
+  baseURL: https://{deployment}.api.accelo.com/api/v0
+  tags:
+  - Professional Services Automation
+  - Project Management
+  - CRM
+  - Time Tracking
+  - Invoicing
+  properties:
+  - type: Documentation
+    url: https://api.accelo.com/docs/
+  - type: Authentication
+    url: https://api.accelo.com/docs/#authentication
+- aid: accelo:accelo-activities-api
+  name: Accelo Activities API
+  description: The Activities API from Accelo — 4 operation(s) for activities.
+  humanURL: https://api.accelo.com/docs/
+  baseURL: https://{deployment}.api.accelo.com/api/v0
+  tags:
+  - Activities
+  properties:
+  - type: OpenAPI
+    url: openapi/accelo-activities-api-openapi.yml
+- aid: accelo:accelo-companies-api
+  name: Accelo Companies API
+  description: The Companies API from Accelo — 2 operation(s) for companies.
+  humanURL: https://api.accelo.com/docs/
+  baseURL: https://{deployment}.api.accelo.com/api/v0
+  tags:
+  - Companies
+  properties:
+  - type: OpenAPI
+    url: openapi/accelo-companies-api-openapi.yml
+- aid: accelo:accelo-contacts-api
+  name: Accelo Contacts API
+  description: The Contacts API from Accelo — 2 operation(s) for contacts.
+  humanURL: https://api.accelo.com/docs/
+  baseURL: https://{deployment}.api.accelo.com/api/v0
+  tags:
+  - Contacts
+  properties:
+  - type: OpenAPI
+    url: openapi/accelo-contacts-api-openapi.yml
+- aid: accelo:accelo-issues-api
+  name: Accelo Issues API
+  description: The Issues API from Accelo — 2 operation(s) for issues.
+  humanURL: https://api.accelo.com/docs/
+  baseURL: https://{deployment}.api.accelo.com/api/v0
+  tags:
+  - Issues
+  properties:
+  - type: OpenAPI
+    url: openapi/accelo-issues-api-openapi.yml
+- aid: accelo:accelo-jobs-api
+  name: Accelo Jobs API
+  description: The Jobs API from Accelo — 2 operation(s) for jobs.
+  humanURL: https://api.accelo.com/docs/
+  baseURL: https://{deployment}.api.accelo.com/api/v0
+  tags:
+  - Jobs
+  properties:
+  - type: OpenAPI
+    url: openapi/accelo-jobs-api-openapi.yml
+- aid: accelo:accelo-oauth-api
+  name: Accelo OAuth API
+  description: The OAuth API from Accelo — 1 operation(s) for oauth.
+  humanURL: https://api.accelo.com/docs/
+  baseURL: https://{deployment}.api.accelo.com/api/v0
+  tags:
+  - OAuth
+  properties:
+  - type: OpenAPI
+    url: openapi/accelo-oauth-api-openapi.yml
+- aid: accelo:accelo-tasks-api
+  name: Accelo Tasks API
+  description: The Tasks API from Accelo — 2 operation(s) for tasks.
+  humanURL: https://api.accelo.com/docs/
+  baseURL: https://{deployment}.api.accelo.com/api/v0
+  tags:
+  - Tasks
+  properties:
+  - type: OpenAPI
+    url: openapi/accelo-tasks-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/accelo-agentic-access.yml
