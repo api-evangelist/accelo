@@ -1,0 +1,26 @@
+{
+  "provider": "accelo",
+  "sources": [
+    "accelo-activities-api-openapi.yml",
+    "accelo-companies-api-openapi.yml",
+    "accelo-contacts-api-openapi.yml",
+    "accelo-issues-api-openapi.yml",
+    "accelo-jobs-api-openapi.yml",
+    "accelo-oauth-api-openapi.yml",
+    "accelo-tasks-api-openapi.yml"
+  ],
+  "outputs": [
+    "accelo-activities-api-openapi.yml",
+    "accelo-companies-api-openapi.yml",
+    "accelo-contacts-api-openapi.yml",
+    "accelo-issues-api-openapi.yml",
+    "accelo-jobs-api-openapi.yml",
+    "accelo-oauth-api-openapi.yml",
+    "accelo-tasks-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
