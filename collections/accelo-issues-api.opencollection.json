@@ -1,0 +1,73 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Accelo REST Activities Issues API",
+    "version": "v0"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "client_credentials",
+      "accessTokenUrl": "https://{deployment}.api.accelo.com/oauth2/v0/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Issues",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List issues (tickets)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{deployment}.api.accelo.com/api/v0/issues"
+          },
+          "docs": "List issues (tickets)"
+        },
+        {
+          "info": {
+            "name": "Create an issue",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{deployment}.api.accelo.com/api/v0/issues"
+          },
+          "docs": "Create an issue"
+        },
+        {
+          "info": {
+            "name": "Get an issue",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{deployment}.api.accelo.com/api/v0/issues/:issue_id"
+          },
+          "docs": "Get an issue"
+        },
+        {
+          "info": {
+            "name": "Update an issue",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://{deployment}.api.accelo.com/api/v0/issues/:issue_id"
+          },
+          "docs": "Update an issue"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

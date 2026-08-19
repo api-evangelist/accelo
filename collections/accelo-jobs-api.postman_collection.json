@@ -1,0 +1,188 @@
+{
+  "item": [
+    {
+      "id": "209c82ca-3308-4c8d-8b62-ffca1ba0667c",
+      "name": "Jobs",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "1a894eba-7913-4108-82fc-520d06a4ad35",
+          "name": "List jobs (projects)",
+          "request": {
+            "name": "List jobs (projects)",
+            "description": {},
+            "url": {
+              "path": [
+                "jobs"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Your Accelo deployment subdomain",
+                  "type": "any",
+                  "value": "{{deployment}}",
+                  "key": "deployment"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d16667f9-5fe9-470e-8c32-33b90ad23a08",
+          "name": "Create a job",
+          "request": {
+            "name": "Create a job",
+            "description": {},
+            "url": {
+              "path": [
+                "jobs"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Your Accelo deployment subdomain",
+                  "type": "any",
+                  "value": "{{deployment}}",
+                  "key": "deployment"
+                }
+              ]
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "045e649f-9f3c-4f6a-977a-ccdb9247c033",
+          "name": "Get a job",
+          "request": {
+            "name": "Get a job",
+            "description": {},
+            "url": {
+              "path": [
+                "jobs",
+                ":job_id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Your Accelo deployment subdomain",
+                  "type": "any",
+                  "value": "{{deployment}}",
+                  "key": "deployment"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2b4f558b-af29-419c-a698-3461ad78e699",
+          "name": "Update a job",
+          "request": {
+            "name": "Update a job",
+            "description": {},
+            "url": {
+              "path": [
+                "jobs",
+                ":job_id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Your Accelo deployment subdomain",
+                  "type": "any",
+                  "value": "{{deployment}}",
+                  "key": "deployment"
+                }
+              ]
+            },
+            "method": "PUT",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Your Accelo deployment subdomain",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "example",
+      "key": "deployment"
+    },
+    {
+      "type": "string",
+      "value": "https://{{deployment}}.api.accelo.com/api/v0",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "accessTokenUrl",
+        "value": "https://{deployment}.api.accelo.com/oauth2/v0/token"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://{deployment}.api.accelo.com/oauth2/v0/authorize"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "65b8494a-430b-42d2-af6f-2d01a46fbc3a",
+    "name": "Accelo REST Activities Jobs API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST API for Accelo's service operations (ServOps) platform. Provides access to companies, contacts, activities, tasks, jobs (projects), issues, invoices, contracts, quotes, prospects, staff, timers, and webhooks. Uses OAuth 2.0 with bearer access tokens, scoped to a deployment subdomain.\n\nContact Support:\n Name: Accelo",
+      "type": "text/plain"
+    }
+  }
+}

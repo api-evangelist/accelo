@@ -1,0 +1,188 @@
+{
+  "item": [
+    {
+      "id": "9fe35a24-931a-4f12-be15-b1fceab54845",
+      "name": "Issues",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "1211ccf7-f7a2-48e3-b489-4efce6626cd6",
+          "name": "List issues (tickets)",
+          "request": {
+            "name": "List issues (tickets)",
+            "description": {},
+            "url": {
+              "path": [
+                "issues"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Your Accelo deployment subdomain",
+                  "type": "any",
+                  "value": "{{deployment}}",
+                  "key": "deployment"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "405e9718-b91a-4705-bce4-cc523474bef4",
+          "name": "Create an issue",
+          "request": {
+            "name": "Create an issue",
+            "description": {},
+            "url": {
+              "path": [
+                "issues"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Your Accelo deployment subdomain",
+                  "type": "any",
+                  "value": "{{deployment}}",
+                  "key": "deployment"
+                }
+              ]
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f7e4fd79-3e2a-40a6-a916-c8f315676e73",
+          "name": "Get an issue",
+          "request": {
+            "name": "Get an issue",
+            "description": {},
+            "url": {
+              "path": [
+                "issues",
+                ":issue_id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Your Accelo deployment subdomain",
+                  "type": "any",
+                  "value": "{{deployment}}",
+                  "key": "deployment"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c4ed2fdf-6159-44ab-a505-77a9216e363f",
+          "name": "Update an issue",
+          "request": {
+            "name": "Update an issue",
+            "description": {},
+            "url": {
+              "path": [
+                "issues",
+                ":issue_id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Your Accelo deployment subdomain",
+                  "type": "any",
+                  "value": "{{deployment}}",
+                  "key": "deployment"
+                }
+              ]
+            },
+            "method": "PUT",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Your Accelo deployment subdomain",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "example",
+      "key": "deployment"
+    },
+    {
+      "type": "string",
+      "value": "https://{{deployment}}.api.accelo.com/api/v0",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "accessTokenUrl",
+        "value": "https://{deployment}.api.accelo.com/oauth2/v0/token"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://{deployment}.api.accelo.com/oauth2/v0/authorize"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "fe6c7ac7-6cea-401f-9427-5f47d5056cd9",
+    "name": "Accelo REST Activities Issues API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST API for Accelo's service operations (ServOps) platform. Provides access to companies, contacts, activities, tasks, jobs (projects), issues, invoices, contracts, quotes, prospects, staff, timers, and webhooks. Uses OAuth 2.0 with bearer access tokens, scoped to a deployment subdomain.\n\nContact Support:\n Name: Accelo",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Accelo REST Activities Companies API",
+    "version": "v0"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "client_credentials",
+      "accessTokenUrl": "https://{deployment}.api.accelo.com/oauth2/v0/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Companies",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List companies",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{deployment}.api.accelo.com/api/v0/companies"
+          },
+          "docs": "List companies"
+        },
+        {
+          "info": {
+            "name": "Create a company",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{deployment}.api.accelo.com/api/v0/companies"
+          },
+          "docs": "Create a company"
+        },
+        {
+          "info": {
+            "name": "Get a company",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{deployment}.api.accelo.com/api/v0/companies/:company_id"
+          },
+          "docs": "Get a company"
+        },
+        {
+          "info": {
+            "name": "Update a company",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://{deployment}.api.accelo.com/api/v0/companies/:company_id"
+          },
+          "docs": "Update a company"
+        },
+        {
+          "info": {
+            "name": "Delete a company",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://{deployment}.api.accelo.com/api/v0/companies/:company_id"
+          },
+          "docs": "Delete a company"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
