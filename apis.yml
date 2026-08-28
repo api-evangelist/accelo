@@ -8,6 +8,18 @@ description: >-
   activities, tasks, jobs (projects), milestones, invoices, contracts, and
   webhooks using OAuth 2.0 authentication scoped to a deployment subdomain.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
