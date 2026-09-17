@@ -117,18 +117,6 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/accelo-jobs-api-openapi.yml
-- aid: accelo:accelo-oauth-api
-  name: Accelo OAuth API
-  description: The OAuth API from Accelo — 1 operation(s) for oauth.
-  humanURL: https://api.accelo.com/docs/
-  baseURL: https://{deployment}.api.accelo.com/api/v0
-  tags:
-  - Authentication
-  tags_raw:
-  - OAuth
-  properties:
-  - type: OpenAPI
-    url: openapi/accelo-oauth-api-openapi.yml
 - aid: accelo:accelo-tasks-api
   name: Accelo Tasks API
   description: The Tasks API from Accelo — 2 operation(s) for tasks.
@@ -141,6 +129,16 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/accelo-tasks-api-openapi.yml
+- aid: accelo:accelo-oauth-api
+  name: Accelo O Auth API
+  description: The OAuth API from Accelo — 1 operation(s) for oauth.
+  humanURL: https://api.accelo.com/docs/
+  baseURL: https://{deployment}.api.accelo.com/api/v0
+  tags:
+  - OAuth
+  properties:
+  - type: OpenAPI
+    url: openapi/accelo-oauth-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/accelo-agentic-access.yml
