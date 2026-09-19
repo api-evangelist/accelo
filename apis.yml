@@ -135,6 +135,8 @@ apis:
   humanURL: https://api.accelo.com/docs/
   baseURL: https://{deployment}.api.accelo.com/api/v0
   tags:
+  - Authentication
+  tags_raw:
   - OAuth
   properties:
   - type: OpenAPI
