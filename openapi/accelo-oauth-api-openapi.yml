@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Accelo REST Activities OAuth API
+  title: Accelo REST O Auth API
   version: v0
   description: REST API for Accelo's service operations (ServOps) platform. Provides access to companies, contacts, activities, tasks, jobs (projects), issues, invoices, contracts, quotes, prospects, staff, timers, and webhooks. Uses OAuth 2.0 with bearer access tokens, scoped to a deployment subdomain.
   contact:
@@ -23,6 +23,8 @@ paths:
       summary: Get information about the current access token
       tags:
       - OAuth
+      operationId: getTokeninfo
+      x-operation-id-source: derived
 components:
   securitySchemes:
     OAuth2:

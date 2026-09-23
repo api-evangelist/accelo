@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
   title: Accelo REST Activities API
   version: v0
@@ -23,33 +23,47 @@ paths:
       summary: List activities
       tags:
       - Activities
+      operationId: getActivities
+      x-operation-id-source: derived
     post:
       summary: Create an activity
       tags:
       - Activities
+      operationId: postActivities
+      x-operation-id-source: derived
   /activities/{activity_id}:
     get:
       summary: Retrieve a specific activity
       tags:
       - Activities
+      operationId: getActivitiesByActivityId
+      x-operation-id-source: derived
     put:
       summary: Update an activity
       tags:
       - Activities
+      operationId: putActivitiesByActivityId
+      x-operation-id-source: derived
     delete:
       summary: Delete an activity
       tags:
       - Activities
+      operationId: deleteActivitiesByActivityId
+      x-operation-id-source: derived
   /activities/{activity_id}/interactions:
     get:
       summary: List interactions for an activity
       tags:
       - Activities
+      operationId: getActivitiesByActivityIdInteractions
+      x-operation-id-source: derived
   /activities/{activity_id}/threads:
     get:
       summary: List threads for an activity
       tags:
       - Activities
+      operationId: getActivitiesByActivityIdThreads
+      x-operation-id-source: derived
 components:
   securitySchemes:
     OAuth2:

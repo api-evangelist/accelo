@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Accelo REST Activities Issues API
+  title: Accelo REST Issues API
   version: v0
   description: REST API for Accelo's service operations (ServOps) platform. Provides access to companies, contacts, activities, tasks, jobs (projects), issues, invoices, contracts, quotes, prospects, staff, timers, and webhooks. Uses OAuth 2.0 with bearer access tokens, scoped to a deployment subdomain.
   contact:
@@ -23,19 +23,27 @@ paths:
       summary: List issues (tickets)
       tags:
       - Issues
+      operationId: getIssues
+      x-operation-id-source: derived
     post:
       summary: Create an issue
       tags:
       - Issues
+      operationId: postIssues
+      x-operation-id-source: derived
   /issues/{issue_id}:
     get:
       summary: Get an issue
       tags:
       - Issues
+      operationId: getIssuesByIssueId
+      x-operation-id-source: derived
     put:
       summary: Update an issue
       tags:
       - Issues
+      operationId: putIssuesByIssueId
+      x-operation-id-source: derived
 components:
   securitySchemes:
     OAuth2:

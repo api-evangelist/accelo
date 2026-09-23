@@ -1,13 +1,7 @@
 {
   "provider": "accelo",
   "sources": [
-    "accelo-activities-api-openapi.yml",
-    "accelo-companies-api-openapi.yml",
-    "accelo-contacts-api-openapi.yml",
-    "accelo-issues-api-openapi.yml",
-    "accelo-jobs-api-openapi.yml",
-    "accelo-oauth-api-openapi.yml",
-    "accelo-tasks-api-openapi.yml"
+    "_original/accelo-openapi.yml"
   ],
   "outputs": [
     "accelo-activities-api-openapi.yml",
@@ -18,9 +12,24 @@
     "accelo-oauth-api-openapi.yml",
     "accelo-tasks-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "accelo-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "superseded outputs removed: accelo-o-auth-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 8 total)"
+  ],
+  "skipped": [
+    "accelo-activities-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "accelo-companies-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "accelo-contacts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "accelo-issues-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "accelo-jobs-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "accelo-o-auth-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "accelo-tasks-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

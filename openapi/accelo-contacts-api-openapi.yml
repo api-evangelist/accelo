@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Accelo REST Activities Contacts API
+  title: Accelo REST Contacts API
   version: v0
   description: REST API for Accelo's service operations (ServOps) platform. Provides access to companies, contacts, activities, tasks, jobs (projects), issues, invoices, contracts, quotes, prospects, staff, timers, and webhooks. Uses OAuth 2.0 with bearer access tokens, scoped to a deployment subdomain.
   contact:
@@ -23,19 +23,27 @@ paths:
       summary: List contacts
       tags:
       - Contacts
+      operationId: getContacts
+      x-operation-id-source: derived
     post:
       summary: Create a contact
       tags:
       - Contacts
+      operationId: postContacts
+      x-operation-id-source: derived
   /contacts/{contact_id}:
     get:
       summary: Get a contact
       tags:
       - Contacts
+      operationId: getContactsByContactId
+      x-operation-id-source: derived
     put:
       summary: Update a contact
       tags:
       - Contacts
+      operationId: putContactsByContactId
+      x-operation-id-source: derived
 components:
   securitySchemes:
     OAuth2:
