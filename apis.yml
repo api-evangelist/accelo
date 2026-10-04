@@ -142,6 +142,9 @@ apis:
   - type: OpenAPI
     url: openapi/accelo-oauth-api-openapi.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/accelo-capability-edges.yml
+    name: Accelo Business Capability Map
   - type: AgenticAccess
     url: agentic-access/accelo-agentic-access.yml
   - type: DomainSecurity
