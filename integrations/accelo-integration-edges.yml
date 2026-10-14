@@ -5,6 +5,7 @@ source:
 - https://n8n.io/integrations/accelo/
 checked:
 - https://composio.dev/toolkits/accelo
+- https://marketplace.atlassian.com/
 - https://monid.ai/tools/accelo
 - https://n8n.io/integrations/accelo/
 - https://zapier.com/apps/accelo/integrations
@@ -1140,6 +1141,21 @@ edges:
   direction: third-party
   category: Forms & Surveys
   partner_url: https://www.nicereply.com/
+- partner_name: Atlassian Marketplace
+  partner: atlassian
+  partner_match: aggregator
+  type: marketplace
+  marketplace: atlassian
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  evidence: https://marketplace.atlassian.com/vendors/1214183/accelo-inc
+  listing_count: 1
+  apps:
+  - Accelo
+  publisher_name: Accelo Inc
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
 templates:
 - title: Create Accelo sales for newly created or updated HubSpot companies
   url: https://zapier.com/apps/accelo/integrations/hubspot/1448294/create-accelo-sales-for-newly-created-or-updated-hubspot-companies
