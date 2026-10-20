@@ -15,6 +15,7 @@
   evidence: https://zapier.com/apps/accelo/integrations/hubspot/1448294/create-accelo-sales-for-newly-created-or-updated-hubspot-companies
   template: https://zapier.com/apps/accelo/integrations/hubspot/1448294/create-accelo-sales-for-newly-created-or-updated-hubspot-companies
   source: template
+  relationship: ipaas-bridge
   status: pending-generation
   arazzo: null
 - slug: accelo-create-accelo-requests-from-new-typeform-entries
@@ -29,6 +30,7 @@
   evidence: https://zapier.com/apps/accelo/integrations/typeform/15048/create-accelo-requests-from-new-typeform-entries
   template: https://zapier.com/apps/accelo/integrations/typeform/15048/create-accelo-requests-from-new-typeform-entries
   source: template
+  relationship: ipaas-bridge
   status: pending-generation
   arazzo: null
 - slug: accelo-create-accelo-requests-from-new-google-form-responses
@@ -43,6 +45,7 @@
   evidence: https://zapier.com/apps/accelo/integrations/google-forms/14649/create-accelo-requests-from-new-google-form-responses
   template: https://zapier.com/apps/accelo/integrations/google-forms/14649/create-accelo-requests-from-new-google-form-responses
   source: template
+  relationship: ipaas-bridge
   status: pending-generation
   arazzo: null
 - slug: accelo-create-update-accelo-contacts-for-new-google-form-responses
@@ -57,6 +60,7 @@
   evidence: https://zapier.com/apps/accelo/integrations/google-forms/14662/createupdate-accelo-contacts-for-new-google-form-responses
   template: https://zapier.com/apps/accelo/integrations/google-forms/14662/createupdate-accelo-contacts-for-new-google-form-responses
   source: template
+  relationship: ipaas-bridge
   status: pending-generation
   arazzo: null
 - slug: accelo-create-update-accelo-contacts-for-new-hubspot-contacts
@@ -71,6 +75,7 @@
   evidence: https://zapier.com/apps/accelo/integrations/hubspot/14663/createupdate-accelo-contacts-for-new-hubspot-contacts
   template: https://zapier.com/apps/accelo/integrations/hubspot/14663/createupdate-accelo-contacts-for-new-hubspot-contacts
   source: template
+  relationship: ipaas-bridge
   status: pending-generation
   arazzo: null
 - slug: accelo-create-update-accelo-contacts-for-new-autopilot-journeys-contacts
@@ -84,6 +89,7 @@
   evidence: https://zapier.com/apps/accelo/integrations/autopilot/14664/createupdate-accelo-contacts-for-new-autopilot-journeys-contacts
   template: https://zapier.com/apps/accelo/integrations/autopilot/14664/createupdate-accelo-contacts-for-new-autopilot-journeys-contacts
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: accelo-pause-your-accelo-timers-for-new-autoremote-messages
@@ -97,6 +103,7 @@
   evidence: https://zapier.com/apps/accelo/integrations/autoremote/14665/pause-your-accelo-timers-for-new-autoremote-messages
   template: https://zapier.com/apps/accelo/integrations/autoremote/14665/pause-your-accelo-timers-for-new-autoremote-messages
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: accelo-start-your-accelo-timers-for-new-autoremote-messages
@@ -110,6 +117,7 @@
   evidence: https://zapier.com/apps/accelo/integrations/autoremote/14666/start-your-accelo-timers-for-new-autoremote-messages
   template: https://zapier.com/apps/accelo/integrations/autoremote/14666/start-your-accelo-timers-for-new-autoremote-messages
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: accelo-add-new-assigned-accelo-tasks-to-airtable
@@ -124,289 +132,8 @@
   evidence: https://zapier.com/apps/accelo/integrations/airtable/15025/add-new-assigned-accelo-tasks-to-airtable
   template: https://zapier.com/apps/accelo/integrations/airtable/15025/add-new-assigned-accelo-tasks-to-airtable
   source: template
+  relationship: ipaas-bridge
   status: pending-generation
-  arazzo: null
-- slug: accelo-google-forms-legacy
-  label: Google Forms (Legacy)
-  partner_name: Google Forms (Legacy)
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/google-forms-legacy
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: accelo-mailchimp
-  label: Mailchimp
-  partner: mailchimp
-  partner_name: Mailchimp
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/mailchimp
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-facebook-lead-ads-for-business-admins
-  label: Facebook Lead Ads (for Business admins)
-  partner_name: Facebook Lead Ads (for Business admins)
-  category: Ads & Conversion
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/facebook-lead-ads-beta
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: accelo-gravity-forms
-  label: Gravity Forms
-  partner: gravity-forms
-  partner_name: Gravity Forms
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/gravity-forms
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-activecampaign
-  label: ActiveCampaign
-  partner: activecampaign
-  partner_name: ActiveCampaign
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/activecampaign
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-acuity-scheduling
-  label: Acuity Scheduling
-  partner: acuity-scheduling
-  partner_name: Acuity Scheduling
-  category: Scheduling & Booking
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/acuity-scheduling
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-pipedrive
-  label: Pipedrive
-  partner: pipedrive
-  partner_name: Pipedrive
-  category: CRM (Customer Relationship Management)
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/pipedrive
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-wufoo
-  label: Wufoo
-  partner: wufoo
-  partner_name: Wufoo
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/wufoo
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-trello
-  label: Trello
-  partner: trello
-  partner_name: Trello
-  category: Project Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/trello
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-qwilr
-  label: Qwilr
-  partner: qwilr
-  partner_name: Qwilr
-  category: Proposal & Invoice Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/qwilr
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: accelo-chili-piper
-  label: Chili Piper
-  partner: chili-piper
-  partner_name: Chili Piper
-  category: Calendar
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/chili-piper
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-bamboohr
-  label: BambooHR
-  partner: bamboohr
-  partner_name: BambooHR
-  category: HR Talent & Recruitment
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/bamboohr
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-google-sheets
-  label: Google Sheets
-  partner: google-sheets
-  partner_name: Google Sheets
-  category: Google
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/google-sheets
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-mysql
-  label: MySQL
-  partner: mysql
-  partner_name: MySQL
-  category: Databases
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/mysql
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-retently
-  label: Retently
-  partner_name: Retently
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/retently
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: accelo-microsoft-teams
-  label: Microsoft Teams
-  partner: microsoft-teams
-  partner_name: Microsoft Teams
-  category: Microsoft
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/microsoft-teams
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-rightsignature
-  label: RightSignature
-  partner_name: RightSignature
-  category: Signatures
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/rightsignature
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: accelo-pivotal-tracker
-  label: Pivotal Tracker
-  partner_name: Pivotal Tracker
-  category: Project Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/pivotal-tracker
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: accelo-xero
-  label: Xero
-  partner: xero
-  partner_name: Xero
-  category: Accounting
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/xero
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-taxdome
-  label: TaxDome
-  partner_name: TaxDome
-  category: Accounting
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/taxdome
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: accelo-calendly
-  label: Calendly
-  partner: calendly
-  partner_name: Calendly
-  category: Scheduling & Booking
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/calendly
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-podio
-  label: Podio
-  partner: podio
-  partner_name: Podio
-  category: Project Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/podio
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: accelo-evernote
-  label: Evernote
-  partner: evernote
-  partner_name: Evernote
-  category: Notes
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/evernote
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: accelo-nicereply
-  label: Nicereply
-  partner: nicereply
-  partner_name: Nicereply
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/accelo/integrations/nicereply
-  source: edge
-  status: pending-partner-spec
   arazzo: null
 - slug: accelo-atlassian-marketplace
   label: Atlassian Marketplace
@@ -470,4 +197,312 @@
     sources: true
     builder: Pipedream repo (component)
   status: not-a-workflow
+  arazzo: null
+- slug: accelo-google-forms-legacy
+  label: Google Forms (Legacy)
+  partner: google-forms
+  partner_name: Google Forms (Legacy)
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/google-forms-legacy
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-mailchimp
+  label: Mailchimp
+  partner: mailchimp
+  partner_name: Mailchimp
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/mailchimp
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-facebook-lead-ads-for-business-admins
+  label: Facebook Lead Ads (for Business admins)
+  partner: facebook-lead-ads
+  partner_name: Facebook Lead Ads (for Business admins)
+  category: Ads & Conversion
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/facebook-lead-ads-beta
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-gravity-forms
+  label: Gravity Forms
+  partner: gravity-forms
+  partner_name: Gravity Forms
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/gravity-forms
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-activecampaign
+  label: ActiveCampaign
+  partner: activecampaign
+  partner_name: ActiveCampaign
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/activecampaign
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-acuity-scheduling
+  label: Acuity Scheduling
+  partner: acuity-scheduling
+  partner_name: Acuity Scheduling
+  category: Scheduling & Booking
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/acuity-scheduling
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-pipedrive
+  label: Pipedrive
+  partner: pipedrive
+  partner_name: Pipedrive
+  category: CRM (Customer Relationship Management)
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/pipedrive
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-wufoo
+  label: Wufoo
+  partner: wufoo
+  partner_name: Wufoo
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/wufoo
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-trello
+  label: Trello
+  partner: trello
+  partner_name: Trello
+  category: Project Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/trello
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-qwilr
+  label: Qwilr
+  partner: qwilr
+  partner_name: Qwilr
+  category: Proposal & Invoice Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/qwilr
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: accelo-chili-piper
+  label: Chili Piper
+  partner: chili-piper
+  partner_name: Chili Piper
+  category: Calendar
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/chili-piper
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-bamboohr
+  label: BambooHR
+  partner: bamboohr
+  partner_name: BambooHR
+  category: HR Talent & Recruitment
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/bamboohr
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-google-sheets
+  label: Google Sheets
+  partner: google-sheets
+  partner_name: Google Sheets
+  category: Google
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/google-sheets
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-mysql
+  label: MySQL
+  partner: mysql
+  partner_name: MySQL
+  category: Databases
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/mysql
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-retently
+  label: Retently
+  partner_name: Retently
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/retently
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: accelo-microsoft-teams
+  label: Microsoft Teams
+  partner: microsoft-teams
+  partner_name: Microsoft Teams
+  category: Microsoft
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/microsoft-teams
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-rightsignature
+  label: RightSignature
+  partner_name: RightSignature
+  category: Signatures
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/rightsignature
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: accelo-pivotal-tracker
+  label: Pivotal Tracker
+  partner_name: Pivotal Tracker
+  category: Project Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/pivotal-tracker
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: accelo-xero
+  label: Xero
+  partner: xero
+  partner_name: Xero
+  category: Accounting
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/xero
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-taxdome
+  label: TaxDome
+  partner_name: TaxDome
+  category: Accounting
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/taxdome
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: accelo-calendly
+  label: Calendly
+  partner: calendly
+  partner_name: Calendly
+  category: Scheduling & Booking
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/calendly
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-podio
+  label: Podio
+  partner: podio
+  partner_name: Podio
+  category: Project Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/podio
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: accelo-evernote
+  label: Evernote
+  partner: evernote
+  partner_name: Evernote
+  category: Notes
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/evernote
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: accelo-nicereply
+  label: Nicereply
+  partner: nicereply
+  partner_name: Nicereply
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/accelo/integrations/nicereply
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
   arazzo: null
