@@ -17,6 +17,7 @@ checked:
 - https://ecosystem.hubspot.com/marketplace/explore?eco_PRODUCT_TYPE=APP&eco_CERTIFIED=true
 - https://ecosystem.hubspot.com/marketplace/solutions
 - hubspot/integrations/hubspot-integration-edges.yml
+- xero/integrations/xero-integration-edges.yml
 summary: null
 marketplace_apps:
 - marketplace: zapier
@@ -544,6 +545,25 @@ edges:
   detected: '2026-10-21'
   detected_by: mirror-platform-listings.py
   category: PROJECT_MANAGEMENT
+- partner_name: Xero (own)
+  partner: xero
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://apps.xero.com/nz/app/accelo
+  mirror_of: xero/integrations/xero-integration-edges.yml
+  apps:
+  - Accelo
+  listing_count: 1
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Invoicing and jobs
+  features:
+  - Sign Up with Xero
 templates:
 - title: Create Accelo sales for newly created or updated HubSpot companies
   url: https://zapier.com/apps/accelo/integrations/hubspot/1448294/create-accelo-sales-for-newly-created-or-updated-hubspot-companies
