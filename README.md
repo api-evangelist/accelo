@@ -1,4 +1,4 @@
-# Accelo (accelo)
+# Accelo
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,63 +66,119 @@
 
 Accelo is a cloud-based service operations automation (ServOps) platform that unifies project management, client relationship management (CRM), time tracking, retainers, quotes, billing, and invoicing for professional services businesses. The Accelo REST API exposes resources such as companies, contacts, activities, tasks, jobs (projects), milestones, invoices, contracts, and webhooks using OAuth 2.0 authentication scoped to a deployment subdomain.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/accelo/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/accelo/refs/heads/main/apis.yml)
+**Areas:** Professional Services Automation · Project Management · CRM · Time Tracking · Invoicing · Service Operations
 
-## Scope
+## Accelo on APIs.io
 
-- **Type:** Index
+Everything profiled for Accelo is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/accelo/](https://apis.io/providers/accelo/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (8)
 
-- Professional Services Automation
-- Project Management
-- CRM
-- Time Tracking
-- Invoicing
-- Service Operations
+- [Accelo REST API](https://apis.io/apis/accelo/accelo-api/) — REST API for Accelo with CRUD access to companies, contacts, activities, tasks, projects (jobs), milestones, invoices, contracts, quotes, prospects, time…
+- [Accelo Activities API](https://apis.io/apis/accelo/accelo-activities-api/) — The Activities API from Accelo — 4 operation(s) for activities.
+- [Accelo Companies API](https://apis.io/apis/accelo/accelo-companies-api/) — The Companies API from Accelo — 2 operation(s) for companies.
+- [Accelo Contacts API](https://apis.io/apis/accelo/accelo-contacts-api/) — The Contacts API from Accelo — 2 operation(s) for contacts.
+- [Accelo Issues API](https://apis.io/apis/accelo/accelo-issues-api/) — The Issues API from Accelo — 2 operation(s) for issues.
+- [Accelo Jobs API](https://apis.io/apis/accelo/accelo-jobs-api/) — The Jobs API from Accelo — 2 operation(s) for jobs.
+- [Accelo Tasks API](https://apis.io/apis/accelo/accelo-tasks-api/) — The Tasks API from Accelo — 2 operation(s) for tasks.
+- [Accelo O Auth API](https://apis.io/apis/accelo/accelo-oauth-api/) — The OAuth API from Accelo — 1 operation(s) for oauth.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-11
-- **Modified:** 2026-05-11
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Accelo REST API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-REST API for Accelo with CRUD access to companies, contacts, activities, tasks, projects (jobs), milestones, invoices, contracts, quotes, prospects, time entries, staff, and webhooks. Uses OAuth 2.0 (service, web, and installed application grants) with a Bearer access token and deployment-scoped subdomain.
+- [Accelo Agentic Access](https://apis.io/agentic-access/accelo/accelo-agentic-access/)
 
-- **Human URL:** [https://api.accelo.com/docs/](https://api.accelo.com/docs/)
-- **Base URL:** `https://{deployment}.api.accelo.com/api/v0`
+#### Collections (8)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Professional Services Automation
-- Project Management
-- CRM
-- Time Tracking
-- Invoicing
+- [Accelo REST API](https://apis.io/collections/accelo/open-accelo/)
+- [Accelo REST Activities API](https://apis.io/collections/accelo/open-accelo-activities-api/)
+- [Accelo REST Activities Companies API](https://apis.io/collections/accelo/open-accelo-companies-api/)
+- [Accelo REST Activities Contacts API](https://apis.io/collections/accelo/open-accelo-contacts-api/)
+- [Accelo REST Activities Issues API](https://apis.io/collections/accelo/open-accelo-issues-api/)
+- [Accelo REST Activities Jobs API](https://apis.io/collections/accelo/open-accelo-jobs-api/)
+- [Accelo REST Activities OAuth API](https://apis.io/collections/accelo/open-accelo-oauth-api/)
+- [Accelo REST Activities Tasks API](https://apis.io/collections/accelo/open-accelo-tasks-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://api.accelo.com/docs/)
-- [Authentication](https://api.accelo.com/docs/#authentication)
-- [Postman Collection](collections/accelo.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/accelo.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Accelo Authentication](https://apis.io/security/accelo/accelo-authentication/)
+- [Accelo Domain Security](https://apis.io/security/accelo/accelo-domain-security/)
 
-- [GitHub Organization](https://github.com/Accelo)
-- [LinkedIn](https://www.linkedin.com/company/accelo)
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Accelo Scopes](https://apis.io/scopes/accelo/accelo-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.accelo.com)
 - [Documentation](https://api.accelo.com/docs/)
-- [Sign Up](https://www.accelo.com/signup/)
 - [Pricing](https://www.accelo.com/pricing/)
-- [Login](https://app.accelo.com/login/)
 - [Support](https://help.accelo.com/)
 - [Blog](https://www.accelo.com/resources/blog/)
+- [GitHub](https://github.com/Accelo)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 27.2** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 43.2 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 17.1 |
+
+**Agent readiness 22.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | negotiable (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | documented (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 21.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/accelo/](https://apis.io/providers/accelo/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Accelo: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/accelo/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
