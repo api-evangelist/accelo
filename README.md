@@ -106,6 +106,12 @@ Postman and Open Collection request collections.
 - [Accelo REST Activities OAuth API](https://apis.io/collections/accelo/open-accelo-oauth-api/)
 - [Accelo REST Activities Tasks API](https://apis.io/collections/accelo/open-accelo-tasks-api/)
 
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Accelo API Rules](https://apis.io/rules/accelo/accelo-rules/)
+
 #### Security (2)
 
 Authentication, trust centre, and vulnerability disclosure.
@@ -132,18 +138,18 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 27.2** — thin · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 29.3** — thin · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
-| Discoverability | 66.1 |
+| Discoverability | 73.2 |
 | Contract quality | 43.2 |
-| Contract governance | 0.0 |
-| Operational transparency | 2.6 |
+| Contract governance | 13.6 |
+| Operational transparency | 4.8 |
 | Developer ergonomics | 28.6 |
-| Access clarity | 17.1 |
+| Access clarity | 19.1 |
 
-**Agent readiness 22.3** — agent-aware
+**Agent readiness 23.4** — agent-aware
 
 | Agent-readiness dimension | Result |
 |---|---|
@@ -166,8 +172,14 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
-**Regulatory alignment 21.6** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 15.7** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/accelo/](https://apis.io/providers/accelo/).
 
